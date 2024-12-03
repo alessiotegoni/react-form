@@ -1,0 +1,30 @@
+export const postCategories = [
+  { label: "Tecnologia", value: "technology" },
+  { label: "Sport", value: "sports" },
+  { label: "Cucina", value: "cooking" },
+  { label: "Viaggi", value: "travel" },
+  { label: "Musica", value: "music" },
+  { label: "Arte", value: "art" },
+  { label: "Scienza", value: "science" },
+  { label: "Politica", value: "politics" },
+  { label: "Salute", value: "health" },
+  { label: "Educazione", value: "education" },
+];
+
+export const postTags = [
+  { label: "Innovazione", value: "innovation" },
+  { label: "Tecnologia", value: "technology" },
+  { label: "Fitness", value: "fitness" },
+  { label: "Ricette", value: "recipes" },
+  { label: "Viaggi", value: "travel" },
+  { label: "Fotografia", value: "photography" },
+  { label: "Musica", value: "music" },
+  { label: "Film", value: "movies" },
+  { label: "Arte", value: "art" },
+  { label: "Educazione", value: "education" },
+  { label: "Salute", value: "health" },
+  { label: "Natura", value: "nature" },
+  { label: "Scienza", value: "science" },
+  { label: "Politica", value: "politics" },
+  { label: "Startup", value: "startup" },
+];

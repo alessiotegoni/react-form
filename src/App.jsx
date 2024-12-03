@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useId, useState } from "react";
+import CreatePostForm from "./components/Forms/CreatePost/CreatePostForm";
+import Post from "./components/Post/Post";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [posts, setPosts] = useState([]);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <h1>Il mio blog</h1>
+      </header>
+      <main>
+        <div className="container">
+          <div className="flex">
+            <section className="create-post">
+              <CreatePostForm />
+            </section>
+            <section className="my-post">
+              <h2>I miei post</h2>
+              {posts.length ? (
+                posts.map((post) => <Post key={post.id} {...post} />)
+              ) : (
+                <p style={{ marginTop: ".5rem" }}>Non hai postato ancora</p>
+              )}
+            </section>
+          </div>
+        </div>
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

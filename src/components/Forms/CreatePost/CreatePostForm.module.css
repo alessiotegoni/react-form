@@ -1,0 +1,113 @@
+.create_post__form {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #ffffff66;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+}
+
+select {
+  background-color: #181818;
+}
+
+.input__group {
+  margin: 1.5rem 0;
+}
+
+.input__group label,
+.input__group p {
+  margin-bottom: 0.5rem;
+}
+
+.tags__list {
+  gap: 2rem;
+}
+
+.tags__list li label {
+  margin: 0 0 0 0.5rem;
+}
+
+.upload__image {
+    margin: 2rem 0;
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px dashed #fff;
+    border-radius: 1rem;
+}
+
+.publish {
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 0 0;
+}
+
+.publish .inner__toggler {
+  cursor: pointer;
+  position: relative;
+  width: 70px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 2rem;
+}
+
+.publish .toggler {
+  position: absolute;
+  left: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #181818;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+.publish .inner__toggler,
+.publish .toggler {
+  transition: 0.2s ease;
+}
+
+input:checked ~ label .toggler {
+  left: 57%;
+  background-color: #fff;
+}
+
+input:checked ~ label .inner__toggler {
+  background-color: red;
+}
+
+.create_post__form div:last-child {
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.create_post__btn {
+    flex-basis: 50%;
+    background-color: rgb(66, 66, 213);
+}
+
+.reset_post__btn {
+    flex-basis: 50%;
+    background-color: rgb(244, 59, 59);
+}
+
+@media (min-width: 1000px) {
+    .create_post__form {
+        padding: 1.5rem;
+        box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.3);
+        min-width: 500px;
+    }
+}
