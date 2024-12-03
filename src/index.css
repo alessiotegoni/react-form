@@ -45,13 +45,18 @@ section.create-post {
   flex-basis: 38%;
 }
 
-section.my-post {
+section.my-posts {
   flex-basis: 60%;
+}
+
+.my-posts ul {
+  margin-top: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .btn {
@@ -59,4 +64,5 @@ section.my-post {
   border-radius: .8rem;
   color: #fff;
   font-size: 1rem;
+  gap: .5rem
 }
